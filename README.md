@@ -8,11 +8,18 @@ For salmon habitat working group, extract FWA stream gradients:
 
 ## Requirements
 
+- gdal
+- postgis
+- bcdata
+- fwapg
+
 ## Usage
+
+    ./process.sh
 
 ## Output
 
-## fiss_sample_sites_gradient.csv
+### fiss_sample_sites_gradient.csv
 
 | source            | column                      | notes                         |
 |-------------------|-----------------------------|-------------------------------|
@@ -46,7 +53,7 @@ For salmon habitat working group, extract FWA stream gradients:
 | FWA streams       | gradient100m_downstream     | Gradient from adjacent downstream vertex (relative to vertex nearest to survey site), to 100m upstream of that vertex
 
 
-## fiss_observations_gradient.csv
+### fiss_observations_gradient.csv
 
 | source            | column               | notes                         |
 |-------------------|----------------------|-------------------------------|
