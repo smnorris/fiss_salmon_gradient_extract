@@ -1,7 +1,18 @@
-# Stream gradient extract at FISS locations for salmon habitat working group
+# Stream gradient extract 
 
+For salmon habitat working group, extract FWA stream gradients:
 
-## Table 1 - FISS Sample Sites
+- at FISS sample sites 
+- at FISS observations (salmon and steelhead)
+- downstream of FISS observations (salmon and steelhead)
+
+## Requirements
+
+## Usage
+
+## Output
+
+## fiss_sample_sites_gradient.csv
 
 | source            | column                      | notes                         |
 |-------------------|-----------------------------|-------------------------------|
@@ -35,7 +46,7 @@
 | FWA streams       | gradient100m_downstream     | Gradient from adjacent downstream vertex (relative to vertex nearest to survey site), to 100m upstream of that vertex
 
 
-## Table 2 - FISS Observations
+## fiss_observations_gradient.csv
 
 | source            | column               | notes                         |
 |-------------------|----------------------|-------------------------------|
