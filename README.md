@@ -2,9 +2,9 @@
 
 For salmon habitat working group, extract FWA stream gradients:
 
-- at FISS sample sites 
-- at FISS observations (salmon and steelhead)
-- downstream of FISS observations (salmon and steelhead)
+- at FISS sample sites (for comparison of FWA gradients to field measured gradients)
+- at FISS salmon/steelhead observations
+- downstream of FISS salmon/steelhead observations
 
 ## Requirements
 
@@ -15,6 +15,7 @@ For salmon habitat working group, extract FWA stream gradients:
 
 ## Usage
 
+    export DATABASE_URL=postgresql://<user>@<host>:<port>/<db>
     ./process.sh
 
 ## Output
@@ -26,7 +27,8 @@ For salmon habitat working group, extract FWA stream gradients:
 | FISS sample sites | stream_sample_site_id       |                               
 | FWA streams       | blue_line_key               |                               
 | FWA streams       | downstream_route_measure    |                               
-| FISS stream sites | water_body_id               |                               
+| FWA streams       | distance_to_stream          | distance (m) from sample site to matched stream
+| FISS stream sites | wbody_id                    |                               
 | FISS stream sites | data_source                 |                               
 | FISS stream sites | field_utm_zone              |                               
 | FISS stream sites | field_utm_easting           |                               
@@ -42,6 +44,7 @@ For salmon habitat working group, extract FWA stream gradients:
 | ?                 | field_gis_utm_match         | Similar criteria to Fish OBS matching? Would need category for “no Field UTM recorded” |
 | FWA streams       | watershed_code              |                               
 | FWA streams       | stream_order                | 
+| FWA streams       | edge_type                   | 
 | FWA streams       | gradient                    | Stream gradient (%) at location on which the point falls.
 | FWA streams       | gradient_length             | Distance between stream vertices at location on which the point falls.
 | FWA streams       | gradient_upstream           | Gradient of the adjacent upstream segment
