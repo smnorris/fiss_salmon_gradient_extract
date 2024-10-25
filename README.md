@@ -71,7 +71,7 @@ For salmon habitat working group, extract FWA stream gradients:
 | FWA streams       | blue_line_key        | 
 | FWA streams       | stream_order         | 
 | FWA streams       | max_gradient_ds      | Maximum gradient downstream of the observation
-| FWA streams       | max_gradient100m_ds  | Maximum 100m gradient downstream of the observation
+| FWA streams       | max_gradient100m_ds  | Maximum 100m gradient downstream of the observation (within classes 0/5/7/10/12/15/20/25/30)
 | FWA streams       | migration_dist_total | Distance from ocean to observation
 | FWA streams       | migration_dist_lt05  | Distance migrated at gradients <=5%
 | FWA streams       | migration_dist_05_10 | Distance migrated at gradients >5 to <=10%
